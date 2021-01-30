@@ -2,7 +2,7 @@ FROM ruby:2.7-alpine
 MAINTAINER Marnen Laibow-Koser <marnen@marnen.org>
 
 # RUN apk --no-cache add build-base git nodejs yarn tzdata
-RUN apk --no-cache add build-base
+RUN apk --no-cache add build-base nodejs
 
 ARG workdir=/heft-tracker-tool
 ARG rails_port=3000
