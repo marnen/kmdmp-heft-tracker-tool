@@ -14,7 +14,7 @@ services:
       - "bundle:/bundle"
     ports: ["3000:3000"]
     networks: [internal]
-    # command: ["bundle", "exec", "rails", "server", "-b", "0.0.0.0"]
+    command: ["bundle", "exec", "rails", "server", "-b", "0.0.0.0"]
   # cache:
   #   image: redis:5.0.8-alpine
   #   expose: ["6379"]
